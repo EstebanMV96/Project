@@ -45,21 +45,28 @@ Habilita las interfaces al iniciar(nat,bridge)
 3. Para el funcionamiento del servicio se requiere abrir un en el que éste estará alojado, para el proyecto se utilizó el puerto 8088
 
   Para abrir un puerto en Centos 7 se requieren los siguientes pasos:
-    * Iniciar el servicio *firewalld*
+    * Iniciar el servicio *firewalld*:
+
     ```bash
     # service firewalld start
     ```
+
     * Abrir el puerto especificando la zona adecuada, número de puerto y protocolo. Para que el puerto sobreviva frente a un reinicio del servidor, al final de la línea de comando debes añadir la regla *–permanent* :
 
     El comando en general se vería así:
+
     ```bash  
     # firewall-cmd --zone=<zone> --add-port=<port_number>/<protocol> --permanent
     ```
+
     En este caso este fue el comando utilizado:
+
     ```bash
     # firewall-cmd --zone=public --add-port=8088/tcp --permanent
     ```
+
     * Reiniciar el servicio para que los cambios se efectúen:
+
     ```bash
     # firewall-cmd --reload
     ```
@@ -68,7 +75,7 @@ Habilita las interfaces al iniciar(nat,bridge)
   ```bash
   # firewall-cmd --list-all
   ```
-
+  
   En este caso esta fue la salida del comando:
 
   ![][1]
