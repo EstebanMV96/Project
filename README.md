@@ -88,5 +88,8 @@ Habilita las interfaces al iniciar(nat,bridge)
 ## Referencias y Enlaces
 http://www.grupotelfor.com/blog/7-centos-7/13-linux-how-to-open-a-port-on-rhel-centos-7-firewalld <br>
 https://github.com/ICESI-Training/microservices2016b/tree/master/02_intro_flask <br>
+https://www.centos.org/download/ <br>
+https://guides.github.com/features/mastering-markdown/ <br>
+
 
 [1]: images/list.PNG
