@@ -9,10 +9,10 @@ Instalar una maquina virtualbox con CentOS 7
 
 Habilita las interfaces al iniciar(nat,bridge)
 
-1. Crear usuario con el nombre "filesystem_user" para esto se utilizó el siguiente comando:
+1. Crear usuario con el nombre *sistemasoperativos* para esto se utilizó el siguiente comando:
 
   ```bash
-  # adduser filesystem_user
+  # adduser sistemasoperativos
   ```
 
 2. Se requiere instalar el gestor de descargas pip y el gestor de ambientes virtuales desarrollados en python, virtualenv, en la maquina para poder utilizar el servicio web
@@ -75,7 +75,7 @@ Habilita las interfaces al iniciar(nat,bridge)
   ```bash
   # firewall-cmd --list-all
   ```
-  
+
   En este caso esta fue la salida del comando:
 
   ![][1]
@@ -86,5 +86,7 @@ Habilita las interfaces al iniciar(nat,bridge)
 
 
 ## Referencias y Enlaces
+http://www.grupotelfor.com/blog/7-centos-7/13-linux-how-to-open-a-port-on-rhel-centos-7-firewalld <br>
+https://github.com/ICESI-Training/microservices2016b/tree/master/02_intro_flask <br>
 
 [1]: images/list.PNG
